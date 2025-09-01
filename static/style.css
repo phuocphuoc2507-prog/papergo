@@ -1,0 +1,56 @@
+/* static/style.css */
+body { font-family: Arial, sans-serif; background-color: #f0f4f8; margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
+.container { text-align: center; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 800px; }
+header h1 { color: #2c3e50; }
+.status-card { padding: 20px; }
+#video-feed { border: 5px solid #3498db; border-radius: 10px; margin-bottom: 15px; background-color: #ecf0f1; }
+#message-area, .instruction { color: #7f8c8d; font-style: italic; }
+.weighing-info { font-size: 1.5em; color: #2980b9; margin: 10px 0; }
+.buttons button { font-size: 1.2em; padding: 15px 30px; margin: 10px; border: none; border-radius: 8px; cursor: pointer; color: white; transition: background-color 0.3s; }
+#yes-button { background-color: #27ae60; }
+#yes-button:hover { background-color: #2ecc71; }
+#no-button { background-color: #c0392b; }
+#no-button:hover { background-color: #e74c3c; }
+
+/* --- CSS MỚI CHO HIỂN THỊ 2 CÂN --- */
+.weighing-container {
+    display: flex;
+    justify-content: space-around; /* Căn đều không gian giữa các item */
+    align-items: center;
+    margin: 20px 0;
+}
+.bin-display {
+    width: 45%; /* Mỗi thùng chiếm gần một nửa */
+    padding: 15px;
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+}
+.bin-display h3 {
+    margin-top: 0;
+    color: #34495e;
+}
+.progress-bar-container {
+    width: 100%;
+    background-color: #ecf0f1;
+    border-radius: 15px;
+    height: 30px;
+    margin: 15px 0;
+    overflow: hidden; /* Đảm bảo thanh progress bar không bị tràn ra ngoài */
+}
+.progress-bar {
+    width: 0%; /* Bắt đầu từ 0% */
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 15px;
+    transition: width 0.3s ease-in-out; /* Hiệu ứng chuyển động mượt mà */
+}
+.percentage {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 5px 0;
+}
+.weight-kg {
+    font-size: 1.2em;
+    color: #7f8c8d;
+}

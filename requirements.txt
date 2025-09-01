@@ -1,0 +1,10 @@
+numpy
+opencv-python
+deepface
+faiss-cpu
+pandas
+Flask
+Flask-SocketIO
+python-engineio
+python-socketio
+keyboard
